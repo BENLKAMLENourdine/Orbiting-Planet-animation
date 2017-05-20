@@ -1,0 +1,200 @@
+html,body{
+   height: 100%; 
+    width: 100%;
+}
+
+#univers{
+    //height: 100%;
+   // width: 100%;
+    background: black;
+    -webkit-background : radial-gradient(#555,#000);
+    -moz-background : radial-gradient(#555,#000);
+    -o-background : radial-gradient(#555,#000);
+    background : radial-gradient(#555,#000);
+}
+
+#stars{
+    height: 100%;
+    width: 100%;
+    background: url('stars.png') repeat;
+    -webkit-animation: pulse 2s infinite alternate;
+    -moz-animation: pulse 2s infinite alternate;
+    -o-animation: pulse 2s infinite alternate;
+    animation: pulse 2s infinite alternate;
+}
+
+#sun{
+    height: 200px;
+    width: 200px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    background: orange;
+    -webkit-background : radial-gradient(#f5c313,#ec7e08);
+    -moz-background : radial-gradient(#f5c313,#ec7e08);
+    -o-background : radial-gradient(#f5c313,#ec7e08);
+    background : radial-gradient(#f5c313,#ec7e08);
+    -webkit-box-shadow : 0 0 50px #f5c91a;
+    -moz-box-shadow : 0 0 50px #f5c91a;
+    -o-box-shadow : 0 0 50px #f5c91a;
+    box-shadow : 0 0 50px #f5c91a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    -webkit-animation: sunFire 2s infinite alternate;
+    -moz-animation: sunFire 2s infinite alternate;
+    -o-animation: sunFire 2s infinite alternate;
+    animation: sunFire 2s infinite alternate;
+}
+
+#earthOrbit{
+    width: 500px;
+    height: 600px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    //border: solid 1px #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -250px;
+    -webkit-animation: spin 30s infinite linear;
+    -moz-animation: spin 30s infinite linear;
+    -o-animation: spin 30s infinite linear;
+    animation: spin 30s infinite linear;
+    
+}
+
+
+img{
+ position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    -webkit-animation: spin 3s infinite linear;
+    -moz-animation: spin 3s infinite linear;
+    -o-animation: spin 3s infinite linear;
+    animation: spin 3s infinite linear;
+}
+
+#moonOrbit{
+    width: 110px;
+    height: 110px;
+    //border: solid 1px white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -55px;
+    margin-left: -10px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+     -webkit-animation: spin 4s infinite linear reverse;
+    -moz-animation: spin 4s infinite linear reverse;
+    -o-animation: spin 4s infinite linear reverse;
+    animation: spin 4s infinite linear reverse;
+}
+
+#moon{
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    background: orange;
+    -webkit-background : radial-gradient(#ddd,#888);
+    -moz-background : radial-gradient(#ddd,#888);
+    -o-background : radial-gradient(#ddd,#888);
+    background : radial-gradient(#ddd,#888);
+    -webkit-box-shadow : 0 0 10px #eee;
+    -moz-box-shadow : 0 0 10px #eee;
+    -o-box-shadow : 0 0 10px #eee;
+    box-shadow : 0 0 10px #eee;
+}
+@-webkit-keyframes pulse{
+    from{opacity: 1;}
+    to{opacity: 0.2;}
+}
+@-moz-keyframes pulse{
+    from{opacity: 1;}
+    to{opacity: 0.2;}
+}
+@-o-keyframes pulse{
+    from{opacity: 1;}
+    to{opacity: 0.2;}
+}
+
+@keyframes pulse{
+    from{opacity: 1;}
+    to{opacity: 0.2;}
+}
+
+
+@-webkit-keyframes sunFire{
+    from{-webkit-box-shadow : 0 0 50px #f5c91a;
+    -moz-box-shadow : 0 0 50px #f5c91a;
+    -o-box-shadow : 0 0 50px #f5c91a;
+    box-shadow : 0 0 50px #f5c91a;}
+    to{-webkit-box-shadow : 0 0 50px #f5c91a;
+    -moz-box-shadow : 0 0 100px #f5c91a;
+    -o-box-shadow : 0 0 100px #f5c91a;
+    box-shadow : 0 0 100px #f5c91a;}
+}
+@-moz-keyframes sunFire{
+    from{-webkit-box-shadow : 0 0 50px #f5c91a;
+    -moz-box-shadow : 0 0 50px #f5c91a;
+    -o-box-shadow : 0 0 50px #f5c91a;
+    box-shadow : 0 0 50px #f5c91a;}
+    to{-webkit-box-shadow : 0 0 50px #f5c91a;
+    -moz-box-shadow : 0 0 100px #f5c91a;
+    -o-box-shadow : 0 0 100px #f5c91a;
+    box-shadow : 0 0 100px #f5c91a;}
+}
+@-o-keyframes sunFire{
+    from{-webkit-box-shadow : 0 0 50px #f5c91a;
+    -moz-box-shadow : 0 0 50px #f5c91a;
+    -o-box-shadow : 0 0 50px #f5c91a;
+    box-shadow : 0 0 50px #f5c91a;}
+    to{-webkit-box-shadow : 0 0 50px #f5c91a;
+    -moz-box-shadow : 0 0 100px #f5c91a;
+    -o-box-shadow : 0 0 100px #f5c91a;
+    box-shadow : 0 0 100px #f5c91a;}
+}
+
+@keyframes sunFire{
+    from{-webkit-box-shadow : 0 0 50px #f5c91a;
+    -moz-box-shadow : 0 0 50px #f5c91a;
+    -o-box-shadow : 0 0 50px #f5c91a;
+    box-shadow : 0 0 50px #f5c91a;}
+    to{-webkit-box-shadow : 0 0 50px #f5c91a;
+    -moz-box-shadow : 0 0 100px #f5c91a;
+    -o-box-shadow : 0 0 100px #f5c91a;
+    box-shadow : 0 0 100px #f5c91a;}
+}
+
+@-o-keyframes spin{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+
+@-webkit-keyframes spin{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+
+@-moz-keyframes spin{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes spin{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);
+    }
+}
